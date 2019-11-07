@@ -14,26 +14,16 @@
 <body>
   <form name="contact" method="POST" data-netlify="true">
   <p>
-    <label>Your Name: <input type="text" name="name" /></label>
+    <label>Email: <input type="email" name="email" /></label>
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email" /></label>
+    <label>Message: <input type="text" name="text" /></label>
   </p>
-  <p>How old are you?</p>
+  <p>Would you like a reply?</p>
     <ol>
-        <li><input type="radio" name="age" value="under24" checked> under 24</li>
-        <li><input type="radio" name="age" value="25-34"> 25 to 34</li>
-        <li><input type="radio" name="age" value="35-44"> 35 to 44</li>
-        <li><input type="radio" name="age" value="over45"> 45+</li>
+        <li><input type="radio" name="reply" value="yes" checked> Yes</li>
+        <li><input type="radio" name="reply" value="no"> No</li>
     </ol>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
   </p>
   <p>
     <button type="submit">Send</button>
